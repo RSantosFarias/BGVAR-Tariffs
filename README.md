@@ -46,8 +46,8 @@ To minimize measurement error and maximize structural representativeness, I am e
 * **Argentina (Spliced Series):**
     * The Argentine series is constructed via a regime-dependent splicing methodology to address the underreporting period (2007-2015).
     * **Jan 2010 – Dec 2010:** Billion Prices Project (Cavallo) | https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UYX11A
-    * **Jan 2011 – Jul 2012:** IPC Congreso | https://docs.google.com/spreadsheets/d/1gUQEOnvv9WI3zB3S2AQaIkylsCqV5dYhMER4B0MGSys/edit?gid=0#gid=0
-    * **Aug 2012 – Apr 2016:** IPC CABA (Buenos Aires City) | https://www.estadisticaciudad.gob.ar/eyc/banco-datos/ipcba-evolucion-del-nivel-general-de-los-bienes-y-de-los-servicios-indices-y-variaciones-porcentuales-respecto-del-mes-anterior-ciudad-de-buenos-aires-julio-2012-diciembre-2014/
-    * **May 2016 – Present:** International Monetary Fund | https://data.imf.org/en/datasets/IMF.STA:CPI
+    * **Jan 2011 – Jun 2012:** IPC Congreso | https://docs.google.com/spreadsheets/d/1gUQEOnvv9WI3zB3S2AQaIkylsCqV5dYhMER4B0MGSys/edit?gid=0#gid=0
+    * **Jul 2012 – Nov 2016:** IPC CABA (Buenos Aires City) | https://www.estadisticaciudad.gob.ar/eyc/banco-datos/ipcba-evolucion-del-nivel-general-de-los-bienes-y-de-los-servicios-indices-y-variaciones-porcentuales-respecto-del-mes-anterior-ciudad-de-buenos-aires-julio-2012-diciembre-2014/
+    * **Dec 2016 – Present:** International Monetary Fund | https://data.imf.org/en/datasets/IMF.STA:CPI
 
 > **Note:** Obligatory citation of Cavallo, A., 2013. Online and official price indexes: Measuring Argentina's inflation. Journal of Monetary Economics, 60(2), pp.152-165. Check '00_Argentina_Cavallo_Agg.R' and '00_Argentina_CPI.R' on the repo.
