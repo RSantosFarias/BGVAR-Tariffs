@@ -39,7 +39,7 @@ To minimize measurement error and maximize structural representativeness, I am e
 | **Colombia** | ISE | Indicador de Seguimiento a la Economía | https://www.dane.gov.co/index.php/estadisticas-por-tema/cuentas-nacionales/indicador-de-seguimiento-a-la-economia-ise |
 | **Argentina** | EMAE | Estimador mensual de actividad económica | https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-9-48 |
 
-## CPI
+## CPI (Index)
 
 * **Brazil, Chile, China, Colombia, UK, Japan, Mexico, US:** International Monetary Fund | https://data.imf.org/en/datasets/IMF.STA:CPI
 * **Euro Area:** EuroStat - Harmonised Indices of Consumer Prices (EA20 HICP) | https://ec.europa.eu/eurostat/web/hicp/database
@@ -51,3 +51,16 @@ To minimize measurement error and maximize structural representativeness, I am e
     * **Dec 2016 – Present:** International Monetary Fund | https://data.imf.org/en/datasets/IMF.STA:CPI
 
 > **Note:** Obligatory citation of Cavallo, A., 2013. Online and official price indexes: Measuring Argentina's inflation. Journal of Monetary Economics, 60(2), pp.152-165. Check '00_Argentina_Cavallo_Agg.R' and '00_Argentina_CPI.R' on the repo.
+
+## Short-Term Interest Rates
+
+* **United States:** FRED - Federal Funds Effective Rate | https://fred.stlouisfed.org/series/FEDFUNDS
+* **Euro Area:** European Central Bank - Euribor 3-month | https://data.ecb.europa.eu/data/datasets/FM/FM.M.U2.EUR.RT.MM.EURIBOR3MD_.HSTA (Searching for an overnight alternative!)
+* **United Kingdom:** Bank of England - Sterling Overnight Index Average (SONIA) | https://www.bankofengland.co.uk/boeapps/database/fromshowcolumns.asp?Travel=NIxSUx&FromSeries=1&ToSeries=50&DAT=ALL&FNY=&CSVF=TT&html.x=199&html.y=48&C=5JK&Filter=N
+* **Japan:** FRED -  Immediate Rates (< 24 Hours) | https://fred.stlouisfed.org/series/IRSTCI01JPM156N
+* **China:** China Foreign Exchange Trade - Shanghai Interbank Offered Rate (SHIBOR Overnight) | https://www.shibor.org/shibor/dataservicesen/
+* **Brasil:** Banco Central do Brasil - CDI in annual terms | https://www3.bcb.gov.br/sgspub/consultarmetadados/consultarMetadadosSeries.do?method=consultarMetadadosSeriesInternet&hdOidSerieSelecionada=4389
+* **Mexico:** FRED - Immediate Rates (< 24 Hours) | https://fred.stlouisfed.org/series/IRSTCI01MXM156N
+* **Chile:** Banco Central - 1-day interbank interest rate | https://si3.bcentral.cl/Siete/en/Siete/Cuadro/CAP_TASA_INTERES/MN_TASA_INTERES_09/TSF_23/T51
+* **Colombia:** Banco de la Republica - Indicador Bancario de Referencia (IBR) overnight | https://suameca.banrep.gov.co/estadisticas-economicas/informacionSerie/241/tasas_interes_indicador_bancario_referencia_ibr
+ 
