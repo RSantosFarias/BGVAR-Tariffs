@@ -16,6 +16,26 @@ Unlike standard trade models that focus on substitution elasticities, this proje
 **Identification:** Sign Restrictions and Zero Restrictions to disentangle "Trade Policy Uncertainty" (TPU) shocks from "Supply Chain" (GSCPI) shocks.
 **Transmission:** Analysis of the Dilemma hypothesis (Rey, 2015) via Impulse Response Functions (IRFs).
 
+# Proposal: "Constraint Heterogeneity" in Variable Specification
+**Objective:** Solve multicollinearity in LatAm block and align risk proxies with structural reality.
+
+## The Proposal
+Do not use a symmetric variable vector for all $N$ countries. Instead, define $x_{it}$ conditionally based on the economy's structure:
+
+### 1. Advanced Economies (US, EU, UK, JP)
+* **Vector:** $[y, \pi, r, \textbf{Spread}, \textbf{REER}]$
+* **Logic:** Financial risk (Spreads) and Trade Competitiveness (REER) are orthogonal in DMs. We need both to disentangle the Financial Channel from the Trade Channel.
+
+### 2. Emerging Markets (Brazil, MX, CO, CL)
+* **Vector:** $[y, \pi, r, \textbf{EMP}]$
+* **Change:** **Drop REER.**
+* **Logic:**
+    1.  **Multicollinearity:** In EMs, both EMP and REER are dominated by nominal FX volatility ($\Delta e$). Including both creates severe collinearity.
+    2.  **Structural Reality:** For a "Sudden Stop" shock, EMP (Liquidity/FX Crash) is the binding constraint. It implicitly captures the FX movement, rendering REER redundant.
+
+## Question for Professor
+"Is it acceptable to drop REER for the EM block to cure multicollinearity, given that EMP already captures the nominal exchange rate variance? This results in a heterogeneous GVAR specification (different variables for DMs vs. EMs), which is supported by the `BGVAR` package."
+
 # Data Sources
 
 ## Financial & Uncertainty
