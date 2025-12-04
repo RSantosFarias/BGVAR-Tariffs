@@ -5,6 +5,20 @@ A Bayesian Global Vector Autoregression (BGVAR) framework implementing SSVS prio
 **Stack:** R (BGVAR), Bayesian Econometrics, Time-Series Analysis  
 **Focus:** US-Brazil Macro-Financial Linkages
 
+## Disclaimer & Copyright
+
+**© 2025 Rubens Santos Farias.**
+
+This repository contains the source code, data architecture, and econometric specifications for the working paper: *"Uma Análise Estrutural do Choque Tarifário EUA-Brasil"*.
+
+**Status:** Work in Progress.
+The methodology, variable specifications, and preliminary results are subject to change until the final submission (February 2026).
+
+**Usage Policy:**
+This project implements established econometric methodologies (BGVAR). While the underlying theoretical frameworks belong to the cited literature, the **specific code implementation, data processing scripts, and model architecture** hosted here are the intellectual property of the author.
+
+You are free to view and fork this repository for educational purposes. However, direct reproduction of these scripts for academic submission without proper citation is prohibited.
+
 # Overview
 This repository contains the replication code and data architecture for analyzing the transmission of US protectionist shocks to the Brazilian economy. 
 
@@ -23,11 +37,11 @@ Unlike standard trade models that focus on substitution elasticities, this proje
 Do not use a symmetric variable vector for all $N$ countries. Instead, define $x_{it}$ conditionally based on the economy's structure:
 
 ### 1. Advanced Economies (US, EU, UK, JP)
-* **Vector:** $[y, \pi, r, \textbf{Spread}, \textbf{REER}]$
+* **Vector:** $[y, \pi, r, \textbf{Spread}, \textbf{REER}, vol^{exp}_{it}, vol^{imp}_{it}]$
 * **Logic:** Financial risk (Spreads) and Trade Competitiveness (REER) are orthogonal in DMs. We need both to disentangle the Financial Channel from the Trade Channel.
 
 ### 2. Emerging Markets (Brazil, MX, CO, CL)
-* **Vector:** $[y, \pi, r, \textbf{EMP}]$
+* **Vector:** $[y, \pi, r, \textbf{EMP}, vol^{exp}_{it}, vol^{imp}_{it}]$
 * **Change:** **Drop REER.**
 * **Logic:**
     1.  **Multicollinearity:** In EMs, both EMP and REER are dominated by nominal FX volatility ($\Delta e$). Including both creates severe collinearity.
